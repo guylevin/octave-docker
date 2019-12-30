@@ -32,7 +32,7 @@ RUN apk update \
         tini \
         ghostscript \
         # python3 \
-        # gnuplot \
+        gnuplot \
         # su-exec \ 
         # texinfo \
         # xvfb \
