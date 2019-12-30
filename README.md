@@ -1,7 +1,7 @@
 # octave-docker
-A Octave container based on Alpine
+An Octave container based on Alpine
 
-**Suitable for Stanford University Machine Learning Course**
+**Octave 5.1.0**
 
 ## Docker Build
 Automatic builds are setup in DockerHub
@@ -33,3 +33,5 @@ docker build -t octave-docker .
 ```
 docker run -it octave-docker
 ```
+
+**Suitable for Stanford University Machine Learning Course**
