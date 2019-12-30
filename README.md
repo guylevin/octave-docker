@@ -34,6 +34,6 @@ docker build -t octave-docker .
 docker run -it octave-docker
 ```
 
-**License only applied to the docker file, please check license for other libraries/os etc. installed before usage**
+**License only applied to the docker file, please check the licenses for other libraries/os etc. installed before usage**
 
-**Also Suitable for Stanford University Machine Learning Course**
+Should be suitable for the Stanford University Machine Learning course
