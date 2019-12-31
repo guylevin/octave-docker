@@ -11,12 +11,19 @@ https://hub.docker.com/r/guylevin/octave-docker
 
 ### Pull
 ```
-docker pull guylevin/octave-docker
+docker pull guylevin/octave-docker:latest
 ```
 ### Run
 ```
-docker run -it guylevin/octave-docker
+docker run -it guylevin/octave-docker:latest
 ```
+
+### Mount
+If you want to mount a directory from the host machine (to share data with the container for example)
+```
+docker run -it --mount type=bind,source="$(pwd)",target=/data guylevin/octave-docker:latest
+```
+This command will share you current host directory with a direcotry called /data inside the container
 
 
 ## Clone & Build

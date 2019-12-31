@@ -35,7 +35,7 @@ RUN apk update \
         gnuplot \
         # su-exec \ 
         # texinfo \
-        # xvfb \
+        xvfb \
     && apk --no-cache add \
         --repository http://dl-cdn.alpinelinux.org/alpine/edge/testing/ \
         hdf5 \
