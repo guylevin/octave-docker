@@ -9,30 +9,35 @@ Automatic builds are setup in DockerHub
 https://hub.docker.com/r/guylevin/octave-docker
 ```
 ### Pull
+*bash version*
 ```
 docker pull guylevin/octave-docker:latest
 ```
-*UI  (GNU)*
+*UI version (GNU)*
 ```
 docker pull guylevin/octave-docker-gnu:latest
 ```
 
 #### Run
+*bash version*
 ```
 docker run -it guylevin/octave-docker:latest
 ```
-*UI  (GNU)*
+*UI version (GNU)*
 ```
 docker run -it guylevin/octave-docker-gnu:latest
 ```
 
 #### Run with mount (Link to the host disk)
+*bash version*
+
 If you want to mount a directory from the host machine (to share data with the container for example)
 ```
 docker run -it --mount type=bind,source="$(pwd)",target=/data guylevin/octave-docker:latest
 ```
 This command will share you current host directory with a direcotry called /data inside the container
-*UI  (GNU)*
+
+*UI version (GNU)*
 ```
 docker run -it --mount type=bind,source="$(pwd)",target=/data guylevin/octave-docker-gnu:latest
 ```
@@ -45,12 +50,13 @@ Clone this reposirory to your computer
 ```
 cd octave-docker
 ```
-bash Version
+
+*bash Version*
 ```
 cd bash
 ```
 
-UI Version (GNU)
+*UI Version (GNU)*
 ```
 cd ui
 ```
