@@ -3,28 +3,39 @@ An Octave container based on Alpine
 
 **Octave 5.1.0**
 
-## Docker Build
+## Automatic Docker Builds
 Automatic builds are setup in DockerHub
 ```
 https://hub.docker.com/r/guylevin/octave-docker
 ```
-
 ### Pull
 ```
 docker pull guylevin/octave-docker:latest
 ```
-### Run
+*UI  (GNU)*
+```
+docker pull guylevin/octave-docker-gnu:latest
+```
+
+#### Run
 ```
 docker run -it guylevin/octave-docker:latest
 ```
+*UI  (GNU)*
+```
+docker run -it guylevin/octave-docker-gnu:latest
+```
 
-### Mount
+#### Run with mount (Link to the host disk)
 If you want to mount a directory from the host machine (to share data with the container for example)
 ```
 docker run -it --mount type=bind,source="$(pwd)",target=/data guylevin/octave-docker:latest
 ```
 This command will share you current host directory with a direcotry called /data inside the container
-
+*UI  (GNU)*
+```
+docker run -it --mount type=bind,source="$(pwd)",target=/data guylevin/octave-docker-gnu:latest
+```
 
 ## Clone & Build
 If you prefer to build the Dockerfile by yourself
@@ -33,6 +44,19 @@ Clone this reposirory to your computer
 ### Build
 ```
 cd octave-docker
+```
+bash Version
+```
+cd bash
+```
+
+UI Version (GNU)
+```
+cd ui
+```
+
+Then run
+```
 docker build -t octave-docker .
 ```
 
